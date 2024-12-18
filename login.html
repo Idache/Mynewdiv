@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Boxicon Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup-App</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="menu-btn"><i class='bx bx-menu'></i></span>
+            <a href="#" class="logo">
+                <h2>Mwebdiv</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn"><i class='bx bx-x'></i></span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+    <!-- Popup Form -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn"><i class='bx bx-x'></i></span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>welcome Back</h2>
+                <p>Please login your personal information to be connected with us</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass">Forgot password</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To be part of our community, please signin your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree to
+                            <a href="#">Terms & condition</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
